@@ -1,16 +1,33 @@
 {
-    "api_ozon":
-      {
-      "client_id": "number",
-      "api_key": "key",
-      "url_domain": "domain",
-      "url_command": "url"
-      },
-    "api_wb":
-      {
-      "client_id": "number",
-      "api_key": "key",
-      "url_domain": "domain",
-      "url_command": "url"
-      }
+    "seller_ozon": {
+        "content_type": "application/json",
+        "urls": {
+            "host": "api-seller.ozon.ru",
+            "cpm": "https://seller.ozon.ru/app/advertisement/!#/product/stencils/",
+            "drr": "https://seller.ozon.ru/app/advertisement/!#/product/search/"
+        },
+        "companies": [
+            100: {
+                "client_id": 10,
+                "api_key": "api-key",
+                "adverts": {
+                    "cpm": [
+                        100
+                    ],
+                    "drr": [
+                        101
+                    ]
+                }
+            }
+        ]
+    },
+    "seller_wb": [
+        100: {
+            "client_id": 11,
+            "supplier_id": "text",
+            "api_key": "api-key",
+            "url_domain": "domain",
+            "url_command": "url"
+        }
+    ]
 }
