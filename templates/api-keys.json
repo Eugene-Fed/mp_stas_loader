@@ -1,33 +1,69 @@
 {
-    "seller_ozon": {
+    "ozon": {
         "content_type": "application/json",
+        "accept": "application/json",
+        "grant_type": "client_credentials",
         "urls": {
-            "host": "api-seller.ozon.ru",
+            "host": "https://performance.ozon.ru",
+            "host_for_manager": "https://api-seller.ozon.ru",
             "cpm": "https://seller.ozon.ru/app/advertisement/!#/product/stencils/",
             "drr": "https://seller.ozon.ru/app/advertisement/!#/product/search/"
         },
+        "commands": {
+            "ad_stat": "/api/client/statistics",
+            "phrase_stat": "/api/client/statistics/phrases",
+            "odred_stat": "/api/client/statistics/attribution"
+        },
+        "methods": {
+            "GET": {
+                "campaign_list": "campaign"
+            },
+            "POST": {
+                "ad_statistics": "statistics"
+            }
+        },
         "companies": [
-            100: {
-                "client_id": 10,
-                "api_key": "api-key",
-                "adverts": {
-                    "cpm": [
-                        100
-                    ],
-                    "drr": [
-                        101
-                    ]
+            {
+                "INN_1": {
+                    "client_id": "client_id",
+                    "client_secret": "client_secret",
+                    "api_key_for_manage": "api_key_for_manage",
+                    "adverts": {
+                        "cpm": [
+                            "1000000"
+                        ],
+                        "drr": [
+                            "1000001"
+                        ]
+                    }
+                }
+            },
+            {
+                "INN_2": {
+                    "client_id": "client_id",
+                    "client_secret": "client_secret",
+                    "api_key_for_manage": "api_key_for_manage",
+                    "adverts": {
+                        "cpm": [
+                            "2000000"
+                        ],
+                        "drr": [
+                            "2000001"
+                        ]
+                    }
                 }
             }
         ]
     },
-    "seller_wb": [
-        100: {
-            "client_id": 11,
-            "supplier_id": "text",
-            "api_key": "api-key",
-            "url_domain": "domain",
-            "url_command": "url"
+    "wb": [
+        {
+            "INN_1": {
+                "client_id": "client_id",
+                "supplier_id": "supplier_id",
+                "api_key": "api_key",
+                "url_domain": "domain",
+                "url_command": "url"
+            }
         }
     ]
 }
