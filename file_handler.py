@@ -42,6 +42,11 @@ def load_json(file: Path, templates_dir=templates_dir) -> json:
     return json_data
 
 
+def save_file(file_path: Path, file_data) -> None:
+    """Сохранение файлов по заданному пути с заданным содержимым"""
+    pass
+
+
 if __name__ == '__main__':
     settings = load_json(file=settings_file)
     print(json.dumps(settings, indent=4))
