@@ -1,0 +1,39 @@
+КАЛЕНДАРЬ
+# <input _ngcontent-hmq-c34="" class="form__input date-picker__input ng-pristine ng-valid ng-touched" readonly="" placeholder="__.__.____ - __.__.____">
+# <input _ngcontent-hmq-c34="" appdate="" class="m-b-24 form__input date-picker__period-calendar__input ng-pristine ng-valid ng-touched">
+
+<div _ngcontent-hmq-c34="" class="date-picker__calendar__dates__week__date date-picker__calendar__dates__week__date--border date-picker__calendar__dates__week__date--selected ng-star-inserted"> 19 </div>
+<div _ngcontent-hmq-c34="" class="date-picker__calendar__dates__week__date date-picker__calendar__dates__week__date--border date-picker__calendar__dates__week__date--selected ng-star-inserted"> 25 </div>
+
+Selector: 
+body > app-root > div > div.wrapper__body > div.wrapper__body__content > div > app-advert > div > div.charts.m-t-48.ng-star-inserted > div.charts__header > div.form.ng-star-inserted > app-date-picker > div > div.date-picker__wrap-calendar.date-picker__wrap-calendar--period.date-picker__wrap-calendar--right.ng-star-inserted > div.date-picker__period-calendar.ng-star-inserted > input:nth-child(3)
+
+XPath
+начальная дата
+/html/body/app-root/div/div[1]/div[2]/div/app-advert/div/div[3]/div[1]/div[2]/app-date-picker/div/div[2]/div[2]/input[1]
+
+конечная дата
+/html/body/app-root/div/div[1]/div[2]/div/app-advert/div/div[3]/div[1]/div[2]/app-date-picker/div/div[2]/div[2]/input[2]
+
+*************
+
+КНОПКА СОХРАНИТЬ
+<button _ngcontent-hmq-c34="" class="btn btn--orange text--bold btn--medium" type="button"> Сохранить </button>
+
+Selector
+body > app-root > div > div.wrapper__body > div.wrapper__body__content > div > app-advert > div > div.charts.m-t-48.ng-star-inserted > div.charts__header > div.form.ng-star-inserted > app-date-picker > div > div.date-picker__wrap-calendar.date-picker__wrap-calendar--period.date-picker__wrap-calendar--right.ng-star-inserted > div.date-picker__period-calendar.ng-star-inserted > button
+
+XPath
+/html/body/app-root/div/div[1]/div[2]/div/app-advert/div/div[3]/div[1]/div[2]/app-date-picker/div/div[2]/div[2]/button
+
+*************
+
+КНОПКА ВЫГРУЗИТЬ EXCEL
+
+<div _ngcontent-hmq-c33="" class="flex flex--justify-center"><i _ngcontent-hmq-c33="" class="icon icon__download m-r-10"></i> Выгрузить в Excel</div>
+
+Selector
+body > app-root > div > div.wrapper__body > div.wrapper__body__content > div > app-advert > div > div.wrap-button.subject-label.m-t-48.flex.flex--content-between.flex--align-items-center.ng-star-inserted > div.col.col-no-gutter.flex.flex--content-end > div > button > div
+
+XPath
+/html/body/app-root/div/div[1]/div[2]/div/app-advert/div/div[4]/div[2]/div/button/div
